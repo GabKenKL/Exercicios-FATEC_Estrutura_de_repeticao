@@ -1,0 +1,21 @@
+#Receba 2 números inteiros, verifique qual o maior entre eles. Calcule e mostre o resultado da somatória dos números ímpares entre esses valores.
+
+#algoritmo soma dos impares
+#declarar
+soma = 0
+
+N1 = int(input("Digite o primeiro número: "))
+N2 = int(input("Digite o segundo número:"))
+
+if N1 > N2:
+    maior = N1
+    menor = N2
+elif N2 > N1:
+    maior = N2
+    menor = N1
+
+for i in range(menor , maior + 1):
+    if i % 2 != 0:
+        soma += i
+
+print("A somatória equivale a " , soma)
