@@ -1,0 +1,20 @@
+#Algoritmo
+#declarar
+Valor = 0
+maior = 0
+menor = 0
+cta = 0
+
+while (cta < 10):
+    Valor = int(input(f"Digite o valor {cta + 1}: "))
+    if (cta == 0):
+        maior = Valor
+        menor = Valor
+    else:
+        if (Valor > maior):
+            maior = Valor
+        elif (Valor < menor):
+            menor = Valor
+    cta = cta + 1
+
+print("O maior valor é de", maior, "e o menor valor é de", menor)
