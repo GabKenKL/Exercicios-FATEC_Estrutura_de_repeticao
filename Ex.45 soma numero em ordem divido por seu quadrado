@@ -1,0 +1,20 @@
+#Calcule e mostre a série 1 – 2/4 + 3/9 – 4/16 + 5/25 + ... + 15/225
+
+#declarar
+num: int = 1
+valor: int = 0
+
+def serie():
+    global num
+    global valor
+
+    while num < 16:
+        resultado = 1 / num
+        if num % 2 == 0:
+            valor -= resultado
+        else:
+            valor += resultado
+        num += 1
+    print("O resultado equivale a" , valor)
+
+serie()
