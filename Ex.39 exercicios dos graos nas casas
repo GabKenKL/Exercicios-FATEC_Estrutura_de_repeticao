@@ -1,0 +1,26 @@
+#algoritmo
+#declaração de variáveis
+casa_tabuleiro: int = 64
+contagem: int = 0
+somatória: int = None
+
+def multiplicar(casa):
+    global contagem
+    global somatória
+    somatória_n = 0
+
+    while contagem < casa:
+        quantidade = 2 ** contagem
+        print("casa" , (contagem + 1) , ":" , quantidade)
+        somatória_n = quantidade + somatória_n
+        contagem += 1
+
+    return somatória_n
+
+def main():
+    global casa_tabuleiro
+    somatória = multiplicar(casa_tabuleiro)
+    print("A quantidade de grãos contidos no tabuleira é de" , somatória , "grãos.")
+
+if (__name__ == '__main__'):
+    main()
