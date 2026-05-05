@@ -1,0 +1,11 @@
+#Receba um número inteiro. Calcule e mostre a série de Fibonacci até o seu N’nésimo termo.
+
+n_termos = int(input("Digite o número do termo desejado: "))
+a , b = 0 , 1
+contagem = 0
+
+print("sequência de Fibonacci:")
+while contagem < n_termos:
+    print(a, end=' , ')
+    a , b = b, a + b
+    contagem += 1
