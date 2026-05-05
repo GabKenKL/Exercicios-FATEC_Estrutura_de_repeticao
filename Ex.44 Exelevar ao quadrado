@@ -1,0 +1,17 @@
+#Receba o número da base e do expoente. Calcule e mostre o valor da potência.
+base: float = 0
+expoente: float = 0
+potencia: float = 0
+
+def calc_potencia():
+    global potencia
+    global base
+    global expoente
+
+    base = float(input("Digite o número da base: "))
+    expoente = float(input("Digite o número do expoente: "))
+
+    potencia = base ** expoente
+    print("O valor da potência equivale a " , potencia)
+
+calc_potencia()
