@@ -1,0 +1,22 @@
+#Calcule e mostre a série 1 + 2/3 + 3/5 + ... + 50/99
+#Algoritmo
+
+#declarar
+num: int = 1
+impares: int = 1
+soma: int = 0
+
+def divisao():
+    resultado = 0
+    global num
+    global impares
+    global soma
+    
+    while num < 51 and impares < 101:
+        resultado = num / impares
+        soma = resultado + soma
+        num = num + 1
+        impares = impares + 2
+    print ("A soma equivale a " , soma)
+    
+divisao()
