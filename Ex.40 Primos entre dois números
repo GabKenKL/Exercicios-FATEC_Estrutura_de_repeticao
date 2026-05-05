@@ -1,0 +1,26 @@
+#Algoritmo
+#declarar
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+
+# Garantir ordem
+if n1 > n2:
+    n1, n2 = n2, n1
+
+i = n1
+
+while i <= n2:
+    if i > 1:
+        primo = True
+        j = 2
+
+        while j <= i // 2:
+            if i % j == 0:
+                primo = False
+                break
+            j += 1
+
+        if primo:
+            print(i, "é primo")
+
+    i += 1
