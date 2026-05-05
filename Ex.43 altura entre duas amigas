@@ -1,0 +1,21 @@
+#Calcule e mostre quantos anos serão necessários para que Ana seja maior que Maria sabendo que Ana tem 1,10 m e cresce 3 cm ao ano e Maria tem 1,5 m e cresce 2 cm ao ano.
+ana: float = 1.10
+maria: float = 1.5
+qtd_anos: int = 0
+def idade(anos):
+    global ana
+    global maria
+
+    while maria >= ana:
+        ana = ana + 0.03
+        maria = maria + 0.02
+        anos += 1
+    return anos
+
+def main():
+    global qtd_anos
+    qtd_anos = idade(qtd_anos)
+    print("Será necessário " , qtd_anos , "anos.")
+
+if (__name__ == '__main__'):
+    main()
