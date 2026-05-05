@@ -1,4 +1,4 @@
-#Receba um número inteiro. Calcule e mostre a série de Fibonacci até o seu N’nésimo termo.
+#Receba um número inteiro. Calcule e mostre a série de Fibonacci até o seu N’nésimo termo. 
 
 n_termos = int(input("Digite o número do termo desejado: "))
 a , b = 0 , 1
