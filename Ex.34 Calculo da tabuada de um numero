@@ -1,0 +1,18 @@
+#Receba um número. Calcule e mostre os resultados da tabuada desse número.
+
+#Algoritmo tabuada
+#declarar
+N = 0
+resultado = 0
+cta = 1
+
+#início
+N = float(input("Digite o número a ser realizado a tabuada: "))
+while (cta <= 10):
+    
+    resultado = cta * N
+    print(N, "x" , cta, "=", resultado)
+
+    cta = cta + 1
+    
+#fim
