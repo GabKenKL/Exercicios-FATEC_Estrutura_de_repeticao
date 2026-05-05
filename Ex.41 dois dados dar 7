@@ -1,0 +1,22 @@
+#Mostre todas as possibilidades de 2 dados de forma que a soma tenha como resultado 7.
+
+#algoritmo dados
+#declaração de variáveis
+D1: int = 1
+D2: int = 1
+Somatória: int = 0
+
+def dado1():
+    global D2
+    global D1
+    global Somatória
+
+    while D2 < 7:
+        while D1 <7:
+            Somatória = D1 + D2
+            if Somatória == 7:
+                print(D1 , "+" , D2 , " = 7")
+                D1 += 1
+        D2 += 1
+
+dado1()
